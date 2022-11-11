@@ -1,15 +1,27 @@
 {
   "expo": {
-    "name": "my-app",
+    "name": "logic and memory",
     "slug": "my-app",
     "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "orientation": "landscape",
+    "icon": "./assets/icons.png",
     "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#FFFFFF"
     },
+    "androidStatusBar": {
+      "hidden": true
+    },
+    "plugins": [
+      [
+        "expo-navigation-bar",
+        {
+          "position": "absolute",
+          "visibility": "hidden",
+          "behavior": "inset-swipe",
+          "backgroundColor": "#FFFFFF"
+        }
+      ]
+    ],
     "updates": {
       "fallbackToCacheTimeout": 0
     },
@@ -21,12 +33,24 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/iconsMini.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.lowech.myapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "expo-navigation-bar": {
+        "position": "absolute",
+        "visibility": "hidden",
+        "behavior": "inset-swipe",
+        "backgroundColor": "#FFFFFF"
+      },
+      "eas": {
+        "projectId": "79e6055d-11ee-4b3e-a4b7-6dde311d0a69"
+      }
     }
   }
 }
